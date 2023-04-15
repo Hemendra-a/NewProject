@@ -6,7 +6,8 @@ public class PageObjectManager {
 	public Launchbrowser_Objects Launchbrowser_Objects;
 	public LoginObject LoginObject;
 	public PersonalDetailsObject PersonalDetailsObject;
-	 public WebDriver driver;
+	public AddressObject AddressObject;
+	public WebDriver driver;
 	public PageObjectManager (WebDriver driver) {
 		this.driver=driver;
 	}
@@ -22,6 +23,11 @@ public class PageObjectManager {
 	public PersonalDetailsObject Getpersonaldetails() {
 		PersonalDetailsObject =new PersonalDetailsObject(driver);
 		return PersonalDetailsObject;
+		
+	}
+	public AddressObject GetAddress() {
+		AddressObject =new AddressObject(driver);
+		return AddressObject;
 		
 	}
 	

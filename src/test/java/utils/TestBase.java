@@ -2,13 +2,16 @@ package utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
 public class TestBase {
 	public WebDriver driver;
+
 public WebDriver WebDriverManager() throws IOException{
 	FileInputStream fis=new FileInputStream("D:\\eclipse-workspace1\\BDD_BGV\\src\\test\\resources\\global.properties");
 	Properties prop=new Properties();
@@ -26,9 +29,10 @@ public WebDriver WebDriverManager() throws IOException{
 		else if(prop.getProperty("browser").equalsIgnoreCase("chrome")) {
 			//firefox
 		}
-   // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+
    
 	driver.get(value);
+	
 	}
 	return driver;
    

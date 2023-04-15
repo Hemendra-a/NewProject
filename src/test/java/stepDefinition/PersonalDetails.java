@@ -35,7 +35,7 @@ public class PersonalDetails {
 	}
 	@And("Select Gender By selectbyone {string}")
 	public void Select_Gender_By_selectbyone(String string) {
-//		PersonalDetailsObject.Gender(string);
+	PersonalDetailsObject.Gender(string);
 	}
 	@And("click on NextButton")
 	public void click_on_NextButton()throws InterruptedException {

@@ -36,7 +36,7 @@ public class LoginObject {
 		Email.isEnabled();
 		
 		System.out.println(email);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
         Email.sendKeys(email);
        
 	}
@@ -45,23 +45,23 @@ public class LoginObject {
 	
 		Password.isEnabled();
 		 System.out.println(pass);
-		 Thread.sleep(2000);
+		 Thread.sleep(1000);
 		Password.sendKeys(pass);
 		
 	}
 	public void ValidatesignupButton() throws InterruptedException {
 		Signup.isEnabled();
-		 Thread.sleep(2000);
+		 Thread.sleep(1000);
 		String signup=Signup.getText();
 		System.out.println(signup);
 		
 	}
 	public void ClickonHideButton() throws InterruptedException {
-		 Thread.sleep(2000);
+		 Thread.sleep(1000);
 		ClickonhideButton.click();
 	}
 	public void ClickonSubmitButton() throws InterruptedException {
-		 Thread.sleep(2000);
+		 Thread.sleep(1000);
 		ClickonSubmitButton.click();
 	}
 }
