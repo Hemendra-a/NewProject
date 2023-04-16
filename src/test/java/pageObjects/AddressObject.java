@@ -60,8 +60,7 @@ public class AddressObject {
 	//click on next page and handle UI
 	@FindBy(xpath ="//*[@class='address_next action-button']")
 	private WebElement ClickonAddressNextButton;
-	@FindBy(xpath ="/html/body/div/div/div/div/div[2]/form/div[2]/fieldset[3]/div[1]/div[3]/div/div[2]/input")
-	private WebElement uploadimage;
+
 
 	public void ValidateCurrentAddressPage() throws InterruptedException {
 		ValidateCurrentAddressPage.isEnabled();
