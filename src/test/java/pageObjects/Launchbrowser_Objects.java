@@ -43,7 +43,8 @@ public class Launchbrowser_Objects {
 //	
     public void Gettitle() {
     	System.out.println(driver.getTitle());
-		
+    	System.out.println("hii ram");
+    	System.out.println("hii manoj");
     }
 	public void Getwelcometext() {
 		WelcomeToFlucent.isEnabled();
