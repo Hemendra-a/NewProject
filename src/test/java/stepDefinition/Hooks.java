@@ -18,8 +18,8 @@ public class Hooks {
 	}
 @After
 public void AfterScenario() throws IOException {
-//	 Testcontextsetup.PageObjectManager.driver.quit();
-//     Testcontextsetup.testbase.WebDriverManager().quit();
+	 Testcontextsetup.PageObjectManager.driver.quit();
+     Testcontextsetup.testbase.WebDriverManager().quit();
 }
 
 @AfterStep

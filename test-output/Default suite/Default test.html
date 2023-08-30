@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Apr 16 21:10:11 IST 2023</td>
+<td>Started on:</td><td>Tue Aug 29 08:40:25 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>92 seconds (92973 ms)</td>
+<tr><td>Total time:</td><td>35 seconds (35354 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,79 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cucumberoption.Runner.runScenario()'><b>runScenario</b><br>Test class: cucumberoption.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get personal details from user", "Launch URL"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;msform&apos;]/div[2]/fieldset[1]/div/div[1]/div/h2&quot;}
+  (Session info: MicrosoftEdge=116.0.1938.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [fee9ab9c2984f69e5cd487b150290f47, findElement {using=xpath, value=//*[@id=&apos;msform&apos;]/div[2]/fieldset[1]/div/div[1]/div/h2}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52284}, msedge: {msedgedriverVersion: 116.0.1938.62 (493f2197e519..., userDataDir: C:\Users\winni\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52284/devtoo..., se:cdpVersion: 116.0.1938.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fee9ab9c2984f69e5cd487b150290f47
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.getText(Unknown Source)
+	at pageObjects.PersonalDetailsObject.Validatepersonaldetaiilspage(PersonalDetailsObject.java:39)
+	at stepDefinition.PersonalDetails.user_is_on_personal_details_page(PersonalDetails.java:16)
+	at ✽.User is on Personal Details Page(file:///D:/eclipse-workspace1/BDD_BGV/src/test/java/feature/Launch.feature:22)
+</pre></div><a href='#' onClick='toggleBox("stack-trace646401836", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace646401836'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;msform&apos;]/div[2]/fieldset[1]/div/div[1]/div/h2&quot;}
+  (Session info: MicrosoftEdge=116.0.1938.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [fee9ab9c2984f69e5cd487b150290f47, findElement {using=xpath, value=//*[@id=&apos;msform&apos;]/div[2]/fieldset[1]/div/div[1]/div/h2}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52284}, msedge: {msedgedriverVersion: 116.0.1938.62 (493f2197e519..., userDataDir: C:\Users\winni\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52284/devtoo..., se:cdpVersion: 116.0.1938.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fee9ab9c2984f69e5cd487b150290f47
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.getText(Unknown Source)
+	at pageObjects.PersonalDetailsObject.Validatepersonaldetaiilspage(PersonalDetailsObject.java:39)
+	at stepDefinition.PersonalDetails.user_is_on_personal_details_page(PersonalDetails.java:16)
+	at ✽.User is on Personal Details Page(file:///D:/eclipse-workspace1/BDD_BGV/src/test/java/feature/Launch.feature:22)
+</pre></div></td>
+<td>9</td>
+<td>cucumberoption.Runner@65e98b1c</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,10 +149,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='cucumberoption.Runner.runScenario()'><b>runScenario</b><br>Test class: cucumberoption.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get personal details from user", "Launch URL"</td>
+<td title='cucumberoption.Runner.runScenario()'><b>runScenario</b><br>Test class: cucumberoption.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login page Validation and signin", "Launch URL"</td>
 <td></td>
-<td>89</td>
-<td>cucumberoption.Runner@385c9627</td></tr>
+<td>20</td>
+<td>cucumberoption.Runner@65e98b1c</td></tr>
 </table><p>
 </body>
 </html>

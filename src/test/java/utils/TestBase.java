@@ -2,12 +2,13 @@ package utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.time.Duration;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
 	public WebDriver driver;
@@ -19,7 +20,7 @@ public WebDriver WebDriverManager() throws IOException{
 	String value=prop.getProperty("QAUrl");
 	if(driver==null) {
 		if(prop.getProperty("browser").equalsIgnoreCase("edge")) {
-	System.setProperty("webdriver.edge.driver","D:\\eclipse-workspace1\\BDD_BGV\\Driver\\msedgedriver.exe");
+	WebDriverManager.edgedriver().setup();
 	driver=new EdgeDriver();//driver get the life
 	driver.manage().window().maximize();
 	
@@ -27,7 +28,9 @@ public WebDriver WebDriverManager() throws IOException{
 	
 		}
 		else if(prop.getProperty("browser").equalsIgnoreCase("chrome")) {
-			//firefox
+			WebDriverManager.chromedriver().setup();
+			driver=new ChromeDriver();//driver get the life
+			driver.manage().window().maximize();
 		}
 
    

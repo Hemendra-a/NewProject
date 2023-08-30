@@ -1,9 +1,12 @@
 package pageObjects;
 
+import java.util.logging.Logger;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 public class IdproofObject {
 	public WebDriver driver;
@@ -128,43 +131,67 @@ public class IdproofObject {
 	@FindBy(xpath="//*[@class='next account_next action-button']")
 	private WebElement ValidateAndClickNextButton_ID;
 	
-	
+	static Logger log=Logger.getLogger(IdproofObject.class.getName());
 	public void ValidateAdharCarddetails() {
-		
+		ValidateAdharCarddetails.isEnabled();
+		ValidateAdharCarddetails.getText();
+		String T1=ValidateAdharCarddetails.getText();
+		log.info(T1);
+      	Assert.assertEquals(T1," Aadhar Card Details");
 		
 	}
     public void Validateaadharnumber() {
-		
+    	Validateaadharnumber.isEnabled();
+    	String t=Validateaadharnumber.getText();
+    	log.info(t);
+    	Assert.assertEquals(t,"Aadhar No.");
 		
 	}
-    public void GetaadharDetails() {
-		
-		
+    public void GetaadharDetails(String Adharno) {
+    	GetaadharDetails.isEnabled();
+    	GetaadharDetails.sendKeys(Adharno);
+    	String t=GetaadharDetails.getText();
+    	log.info(t);
+    	Assert.assertEquals(t,Adharno);
 	}
     public void ValidateName_as_perDocument() {
-		
+    	ValidateName_as_perDocument.isEnabled();
+    	String t=ValidateName_as_perDocument.getText();
+    	log.info(t);
+    	Assert.assertEquals(t,"Name as per Document");
 		
 	}
-    public void GetName_as_perDocument() {
-		
+    public void GetName_as_perDocument(String name) {
+    	GetName_as_perDocument.isEnabled();
+    	GetName_as_perDocument.sendKeys(name);
+    	String t=GetName_as_perDocument.getText();
+    	log.info(t);
+    	Assert.assertEquals(t,name);
 		
  	}
     //
     public void ValidateFront_Side() {
-		
+    	ValidateFront_Side.isEnabled();
+    	String t=ValidateFront_Side.getText();
+    	log.info(t);
+    	Assert.assertEquals(t,"Front Side");
 		
   	}
     public void GetNameFront_Side() {
-		
-		
+    	GetNameFront_Side.isEnabled();
+    	GetNameFront_Side.sendKeys("D:\\eclipse-workspace1\\BDD_BGV\\testdata\\project.jpg");
    	}
     //
     public void ValidateBack_Side() {
-		
+    	ValidateBack_Side.isEnabled();
+    	String t=ValidateBack_Side.getText();
+    	log.info(t);
+    	Assert.assertEquals(t,"Back Side");
 		
   	}
     public void GetNameBack_Side() {
-		
+    	GetNameBack_Side.isEnabled();
+    	GetNameBack_Side.sendKeys("D:\\eclipse-workspace1\\BDD_BGV\\testdata\\project.jpg");
 		
    	}
     //
